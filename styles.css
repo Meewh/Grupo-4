@@ -20,11 +20,29 @@ body {
 }
 
 html {
-    font-family: Lucida Handwriting ;
+    font-family: 'Dancing Script', cursive;
 }
 
 
-h1 a: {
-     transform: scale(1.09);
+/* Estilo base para los títulos h1 */
+#h1p1,
+#h1p2 {
+    display: inline-block;
+    position: relative;
+    /* Necesario para la animación */
+    left: 0;
+    /* Posición inicial */
+    transition: all 0.3s ease;
+    /* Transición suave */
 }
 
+/* Efecto hover para mover a la derecha */
+#h1p1:hover,
+#h1p2:hover {
+    left: 20px;
+    /* Se mueve 20px a la derecha */
+    color: purple;
+    /* Cambio de color opcional */
+    transform: scale(1.05);
+    /* Ligero aumento de tamaño */
+}
